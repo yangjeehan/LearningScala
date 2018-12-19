@@ -39,7 +39,7 @@ object LearningScala2 {
                                                   //| 8
                                                   //| 7
                                                   //| 6
-                                                  //| 5
+                                                   //| 5
                                                   //| 4
                                                   //| 3
                                                   //| 2
@@ -70,6 +70,21 @@ object LearningScala2 {
 	 // Write some code that prints out the first 10 values of the Fibonacci sequence.
 	 // This is the sequence where every number is the sum of the two numbers before it.
 	 // So, the result should be 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
-	 
+
+		var snum = 1;
+
+		var fnum = 0;
+		var tmp = 0;
+
+		for ( i <- 0 until 10 ) {
+			print( fnum );
+			if( i != 9) {
+				print(",")
+			}
+			tmp = fnum;
+			fnum  = fnum + snum;
+			snum = tmp;
+		}
+
 	   
 }
